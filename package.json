@@ -16,9 +16,9 @@
     "dev": "nodemon index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint --fix --ext .js,.jsx .",
-    "patch": "git checkout \"master\" && yarn version --patch && git push -u origin \"master\"",
-    "minor": "git checkout \"master\" && yarn version --minor && git push -u origin \"master\"",
-    "major": "git checkout \"master\" && yarn version --major && git push -u origin \"master\""
+    "patch": "git checkout \"main\" && yarn version --patch && git push -u origin \"main\"",
+    "minor": "git checkout \"main\" && yarn version --minor && git push -u origin \"main\"",
+    "major": "git checkout \"main\" && yarn version --major && git push -u origin \"main\""
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
