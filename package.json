@@ -1,0 +1,47 @@
+{
+  "name": "node-ts-template",
+  "version": "0.0.0",
+  "description": "Template for Node Typescript",
+  "main": "dist/index.js",
+  "repository": "https://github.com/HamzaKV/node-ts-template.git",
+  "author": "HamzaKV <hamzakv333@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "prestart": "yarn build",
+    "start": "node index.ts",
+    "dev": "nodemon index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "patch": "git checkout \"master\" && yarn version --patch && git push -u origin \"master\"",
+    "minor": "git checkout \"master\" && yarn version --minor && git push -u origin \"master\"",
+    "major": "git checkout \"master\" && yarn version --major && git push -u origin \"master\""
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/debug": "^4.1.7",
+    "@types/express": "^4.17.13",
+    "@types/fs-extra": "^9.0.12",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.7.1",
+    "@types/shelljs": "^0.8.9",
+    "eslint": "^7.32.0",
+    "fs-extra": "^10.0.0",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
+}
