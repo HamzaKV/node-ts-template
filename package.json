@@ -15,7 +15,7 @@
     "start": "node dist/index.js",
     "dev": "nodemon index.ts",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix --ext .js,.jsx .",
+    "lint:fix": "eslint --fix --ext .ts .",
     "patch": "git checkout \"main\" && yarn version --patch && git push -u origin \"main\"",
     "minor": "git checkout \"main\" && yarn version --minor && git push -u origin \"main\"",
     "major": "git checkout \"main\" && yarn version --major && git push -u origin \"main\""
