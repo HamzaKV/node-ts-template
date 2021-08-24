@@ -26,8 +26,8 @@ app.use((_req: Request, _res: Response, next: NextFunction) => {
     next(error);
 });
 
-app.use((response: { status: number; data: TObject }, _req: Request, res: Response, _next: NextFunction) => {
-    if (response?.status >= 400 && response?.status <= 599) {
+app.use((response: { status?: number; data: TObject }, _req: Request, res: Response, _next: NextFunction) => {
+    if (response.status && response.status >= 400 && response.status <= 599) {
         res.status(response.status).json({
             error: response.data,
         });

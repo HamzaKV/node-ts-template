@@ -1,7 +1,6 @@
 import d from 'debug';
 import http from 'http';
 import app from './src/app';
-
 const debug = d('server:server');
 
 /**
