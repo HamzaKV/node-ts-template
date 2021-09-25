@@ -1,6 +1,6 @@
 {
   "name": "node-ts-template",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Template for Node Typescript",
   "main": "dist/index.js",
   "repository": "https://github.com/HamzaKV/node-ts-template.git",
