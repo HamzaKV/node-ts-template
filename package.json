@@ -9,9 +9,9 @@
   "private": true,
   "scripts": {
     "clean": "rimraf dist/",
-    "build": "tsc",
+    "build": "yarn clean && tsc && yarn copy-files",
     "copy-files": "copyfiles -e **/*.ts -u 1 src/**/* dist/src",
-    "prestart": "yarn clean && yarn build && yarn copy-files",
+    "prestart": "yarn build && doppler setup",
     "start": "node dist/index.js",
     "dev": "nodemon index.ts",
     "lint": "eslint .",
