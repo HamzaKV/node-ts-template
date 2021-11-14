@@ -27,6 +27,8 @@ Template for typescripted NodeJS Express server
 - @types/morgan
 - @types/node
 - @types/shelljs
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
 - copyfiles
 - eslint
 - fs-extra
